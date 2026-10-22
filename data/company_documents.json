@@ -1,0 +1,92 @@
+[
+  {
+    "id": "hr_vacaciones_001",
+    "title": "Política de Vacaciones y Descansos Remunerados",
+    "content": "Los colaboradores con contrato a término indefinido tienen derecho a 15 días hábiles de vacaciones remuneradas por cada año de servicios continuos. Las solicitudes de vacaciones deben radicarse en la plataforma interna con un mínimo de 15 días calendario de anticipación y requieren la aprobación formal del líder de área antes de adquirir pasajes o programar ausencias.",
+    "metadata": {
+      "department": "recursos_humanos",
+      "type": "politica"
+    }
+  },
+  {
+    "id": "fin_viaticos_002",
+    "title": "Reglamento de Reembolso de Viáticos y Gastos de Viaje",
+    "content": "Los gastos de viaje corporativo, transportes y manutención deben legalizarse dentro de los 5 días hábiles siguientes al regreso del viaje mediante el sistema ERP. Es indispensable adjuntar las facturas electrónicas con NIT institucional. El límite diario de alimentación en ciudades principales es de $120.000 COP; montos superiores deberán contar con preautorización de la gerencia financiera.",
+    "metadata": {
+      "department": "finanzas",
+      "type": "procedimiento"
+    }
+  },
+  {
+    "id": "soporte_sla_003",
+    "title": "Acuerdos de Nivel de Servicio (SLA) de Soporte Técnico",
+    "content": "El equipo de soporte clasifica los incidentes en tres niveles de severidad: Severidad 1 (Crítico: caída total de la plataforma en producción) con tiempo de respuesta inferior a 15 minutos y solución máxima en 2 horas; Severidad 2 (Degradación de servicio) con respuesta en menos de 1 hora; y Severidad 3 (Consultas o requerimientos menores) con respuesta máxima en 24 horas hábiles.",
+    "metadata": {
+      "department": "soporte_ti",
+      "type": "sla"
+    }
+  },
+  {
+    "id": "seg_contrasenas_004",
+    "title": "Estándar de Seguridad de Contraseñas y Accesos MFA",
+    "content": "Todas las cuentas corporativas deben utilizar contraseñas de al menos 14 caracteres alfanuméricos que incluyan letras mayúsculas, minúsculas, números y símbolos especiales. La autenticación multifactor (MFA) vía aplicación TOTP es obligatoria para ingresar a la VPN y repositorios en la nube. Las contraseñas expiran cada 90 días calendario y no se pueden repetir las últimas 6 utilizadas.",
+    "metadata": {
+      "department": "ciberseguridad",
+      "type": "estandar"
+    }
+  },
+  {
+    "id": "dev_despliegue_005",
+    "title": "Guía de Despliegue Continuo en Clústeres Kubernetes",
+    "content": "Los despliegues a los entornos de Staging y Producción deben gestionarse exclusivamente a través del pipeline de GitHub Actions mediante la estrategia GitOps con ArgoCD. Queda estrictamente prohibido aplicar comandos manuales 'kubectl apply' sobre clústeres productivos. Todo cambio de versión requiere un Pull Request aprobado por dos Senior Engineers y pruebas automatizadas en verde.",
+    "metadata": {
+      "department": "ingenieria",
+      "type": "guia"
+    }
+  },
+  {
+    "id": "com_descuentos_006",
+    "title": "Política Comercial de Descuentos en Licenciamiento SaaS",
+    "content": "Los ejecutivos de cuenta están facultados para otorgar descuentos comerciales directos de hasta el 10 % en planes anuales. Descuentos entre el 11 % y el 20 % exigen la autorización por escrito del Gerente Comercial. Cualquier propuesta comercial que contemple un descuento superior al 20 % o condiciones de pago a más de 90 días debe ser avalada de manera unánime por el Comité de Dirección.",
+    "metadata": {
+      "department": "ventas",
+      "type": "politica"
+    }
+  },
+  {
+    "id": "tal_capacitacion_007",
+    "title": "Fondo de Desarrollo Profesional y Certificaciones Cloud",
+    "content": "NovaTech subsidia el 100 % del costo del examen de certificación en arquitecturas cloud (AWS, Azure, GCP o NVIDIA) para colaboradores que hayan superado el periodo de prueba. Cada colaborador dispone de una bolsa anual de formación de hasta $1.500 USD para cursos técnicos especializados, sujeta a un compromiso de permanencia institucional de 6 meses tras la finalización del programa.",
+    "metadata": {
+      "department": "recursos_humanos",
+      "type": "beneficio"
+    }
+  },
+  {
+    "id": "it_hardware_008",
+    "title": "Directriz de Asignación y Renovación de Equipos de Cómputo",
+    "content": "Todo nuevo integrante del área de tecnología recibe un equipo portátil con especificaciones mínimas de procesador 8 núcleos, 32 GB de memoria RAM y almacenamiento SSD NVMe de 1 TB. El ciclo de renovación tecnológica de los equipos se realiza de manera programada cada 36 meses. El hardware extraviado o dañado por negligencia debe ser reportado a HelpDesk en un plazo no mayor a 12 horas.",
+    "metadata": {
+      "department": "operaciones_ti",
+      "type": "politica"
+    }
+  },
+  {
+    "id": "seg_incidentes_009",
+    "title": "Protocolo de Notificación de Incidentes de Fuga de Datos",
+    "content": "En caso de detectar una brecha de seguridad, filtración de credenciales o sospecha de fuga de información confidencial de clientes, el hallazgo debe reportarse de inmediato al correo security-incident@novatech.io en un lapso no superior a 30 minutos. El equipo de respuesta a incidentes activará el aislamiento de hosts y notificará a las autoridades regulatorias en menos de 72 horas.",
+    "metadata": {
+      "department": "ciberseguridad",
+      "type": "protocolo"
+    }
+  },
+  {
+    "id": "dev_apis_010",
+    "title": "Estándar de Arquitectura y Versionado de APIs REST",
+    "content": "Todos los microservicios expuestos deben adherirse a la especificación OpenAPI 3.1 y versionar sus endpoints mediante el prefijo URI (por ejemplo /api/v1/resource). Se requiere paginación obligatoria por cursor en consultas que retornen colecciones, uso de códigos de estado HTTP estándar (200, 201, 400, 401, 403, 404, 500) y cabeceras 'X-Request-ID' para trazabilidad distribuida.",
+    "metadata": {
+      "department": "ingenieria",
+      "type": "estandar"
+    }
+  }
+]

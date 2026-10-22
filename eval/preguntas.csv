@@ -1,3 +1,11 @@
 id,pregunta,fuente_esperada,palabra_clave,respuesta_esperada
 1,How many attention heads does the base Transformer use?,attention_paper.pdf,8,h = 8 heads con dk = dv = 64
 2,What are the two RAG model variants?,rag_paper.pdf,RAG-Token,RAG-Sequence y RAG-Token
+3,What BLEU score did the Transformer big model achieve on English-to-German translation?,attention_paper.pdf,28.4,Achieves 28.4 BLEU on English-to-German
+4,How does RAG combine parametric and non-parametric memory?,rag_paper.pdf,BART,Combines pre-trained seq2seq BART with non-parametric dense vector index
+5,What is the purpose of the scaling factor 1/sqrt(dk) in the dot-product attention formula?,attention_paper.pdf,sqrt(d_k),Prevents dot products from growing large and pushing softmax into vanishing gradients
+6,What dimension d_model does the base Transformer architecture use?,attention_paper.pdf,512,d_model = 512 across all encoder and decoder layers
+7,Which retriever is used in the RAG model to access external Wikipedia knowledge?,rag_paper.pdf,DPR,Dense Passage Retriever (DPR) with bi-encoder architecture
+8,What optimizer and learning rate schedule was used to train the Transformer?,attention_paper.pdf,Adam,Adam optimizer with beta1=0.9 beta2=0.98 and warmup steps
+9,What benchmark tasks were used to evaluate RAG on knowledge-intensive NLP?,rag_paper.pdf,Jeopardy,Open-domain QA datasets and Jeopardy question generation
+10,Which library and index type does RAG use for fast Maximum Inner Product Search?,rag_paper.pdf,FAISS,FAISS with Hierarchical Navigable Small World (HNSW) index
